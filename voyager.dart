@@ -1,18 +1,18 @@
 enum Gender { male, female }
 
 class Cat {
-  String name = 'kitty'; // default values
-  int age = 0; // default values
-  Gender gender = Gender.male; // default values
+  late String name; // default values
+  late int age; // default values
+  late Gender gender; // default values
 
   // Cat(this.name, this.gender, this.age) {
   //   print("Cat constructor");
   // }
 
-  Cat(String _name, Gender _gender, int _age) {
-    name = _name;
-    gender = _gender;
-    age = _age;
+  Cat(String pname, Gender pgender, int page) {
+    name = pname;
+    gender = pgender;
+    age = page;
     print("Calling cat constructor for ${name}");
   }
 
